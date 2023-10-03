@@ -39,15 +39,18 @@ class Die {
     }
     
     void show() {
+      fill(255);
         rect(x, y, 80, 80); // Display the die as a square
         
         // Depending on the value, draw dots in the appropriate positions
         if (roll() == 1) {
+          fill(0);
             ellipse(x + 40, y + 40, 20, 20); // Center dot for 1
         } 
-        // Add conditions for other numbers here...
+        else 
+           fill(0);
+          ellipse(x + 20,y + 20 , 20,20);
     }
 }
 
-
-
+ 
