@@ -23,6 +23,7 @@ void draw() {
 
 void mousePressed() {
     redraw(); // Redraw when the mouse is pressed
+    total = 0;
 }
 
 class Die {
@@ -86,5 +87,3 @@ class Die {
         }
     }
 }
-
-
