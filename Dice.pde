@@ -39,30 +39,36 @@ class Die {
     }
     
     void show() {
+      fill(255);
         rect(x, y, 80, 80); // Display the die as a square
 
         int value = roll(); // Roll the die and store the value
 
         // Depending on the value, draw dots in the appropriate positions
         if (value == 1) {
-            ellipse(x + 40, y + 40, 20, 20); // Center dot for 1
+          fill(0);
+            ellipse(x + 40, y + 40, 20, 20); 
         } 
         else if (value == 2) {
-            ellipse(x + 25, y + 25, 20, 20); // Top-left dot for 2
-            ellipse(x + 55, y + 55, 20, 20); // Bottom-right dot for 2
+          fill(0);
+            ellipse(x + 25, y + 25, 20, 20); 
+            ellipse(x + 55, y + 55, 20, 20); 
         }
         else if (value == 3) {
-            ellipse(x + 25, y + 25, 20, 20); // Top-left dot for 3
-            ellipse(x + 40, y + 40, 20, 20); // Center dot for 3
-            ellipse(x + 55, y + 55, 20, 20); // Bottom-right dot for 3
+          fill(0);
+            ellipse(x + 25, y + 25, 20, 20); 
+            ellipse(x + 40, y + 40, 20, 20); 
+            ellipse(x + 55, y + 55, 20, 20); 
         }
         else if (value == 4) {
-            ellipse(x + 25, y + 25, 20, 20); // Top-left dot for 4
-            ellipse(x + 55, y + 25, 20, 20); // Top-right dot for 4
-            ellipse(x + 25, y + 55, 20, 20); // Bottom-left dot for 4
-            ellipse(x + 55, y + 55, 20, 20); // Bottom-right dot for 4
+          fill(0);
+            ellipse(x + 25, y + 25, 20, 20); 
+            ellipse(x + 55, y + 25, 20, 20); 
+            ellipse(x + 25, y + 55, 20, 20); 
+            ellipse(x + 55, y + 55, 20, 20); 
         }
         else if (value == 5) {
+          fill(0);
             ellipse(x + 25, y + 25, 20, 20); // Top-left dot for 5
             ellipse(x + 55, y + 25, 20, 20); // Top-right dot for 5
             ellipse(x + 40, y + 40, 20, 20); // Center dot for 5
@@ -70,15 +76,14 @@ class Die {
             ellipse(x + 55, y + 55, 20, 20); // Bottom-right dot for 5
         }
         else if (value == 6) {
-            ellipse(x + 25, y + 25, 20, 20); // Top-left dot for 6
-            ellipse(x + 55, y + 25, 20, 20); // Top-right dot for 6
+          fill(0);
+            ellipse(x + 25, y + 20, 20, 20); // Top-left dot for 6
+            ellipse(x + 55, y + 20, 20, 20); // Top-right dot for 6
             ellipse(x + 25, y + 40, 20, 20); // Middle-left dot for 6
             ellipse(x + 55, y + 40, 20, 20); // Middle-right dot for 6
-            ellipse(x + 25, y + 55, 20, 20); // Bottom-left dot for 6
-            ellipse(x + 55, y + 55, 20, 20); // Bottom-right dot for 6
+            ellipse(x + 25, y + 60, 20, 20); // Bottom-left dot for 6
+            ellipse(x + 55, y + 60, 20, 20); 
         }
     }
 }
-
-
 
