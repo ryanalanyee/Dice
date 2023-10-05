@@ -18,7 +18,7 @@ void draw() {
     
     textSize(32);
     fill(0);
-    text("Total: " + total, 150, 350); // Display the total
+    text("Total: " + total, 125, 375); // Display the total
 }
 
 void mousePressed() {
@@ -69,21 +69,22 @@ class Die {
         }
         else if (value == 5) {
           fill(0);
-            ellipse(x + 25, y + 25, 20, 20); // Top-left dot for 5
-            ellipse(x + 55, y + 25, 20, 20); // Top-right dot for 5
-            ellipse(x + 40, y + 40, 20, 20); // Center dot for 5
-            ellipse(x + 25, y + 55, 20, 20); // Bottom-left dot for 5
-            ellipse(x + 55, y + 55, 20, 20); // Bottom-right dot for 5
+            ellipse(x + 25, y + 25, 20, 20); 
+            ellipse(x + 55, y + 25, 20, 20); 
+            ellipse(x + 40, y + 40, 20, 20); 
+            ellipse(x + 25, y + 55, 20, 20); 
+            ellipse(x + 55, y + 55, 20, 20);
         }
         else if (value == 6) {
           fill(0);
-            ellipse(x + 25, y + 20, 20, 20); // Top-left dot for 6
-            ellipse(x + 55, y + 20, 20, 20); // Top-right dot for 6
-            ellipse(x + 25, y + 40, 20, 20); // Middle-left dot for 6
-            ellipse(x + 55, y + 40, 20, 20); // Middle-right dot for 6
-            ellipse(x + 25, y + 60, 20, 20); // Bottom-left dot for 6
+            ellipse(x + 25, y + 20, 20, 20); 
+            ellipse(x + 55, y + 20, 20, 20); 
+            ellipse(x + 25, y + 40, 20, 20); 
+            ellipse(x + 55, y + 40, 20, 20); 
+            ellipse(x + 25, y + 60, 20, 20); 
             ellipse(x + 55, y + 60, 20, 20); 
         }
     }
 }
+
 
